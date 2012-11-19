@@ -3,8 +3,8 @@
 
 	<name>iCagenda (slovenčina)</name>
     <tag>sk-SK</tag>
-	<creationDate>2012-10-02</creationDate>
-	<version>1.2.5</version>
+	<creationDate>2012-11-14</creationDate>
+	<version>1.2.9</version>
 	<author>JRIBARSZKI</author>
 	<authorEmail>jan.ribarszki@gmail.com</authorEmail>
 	<authorUrl>www.safkosuty.sk</authorUrl>
@@ -13,24 +13,26 @@
 	<url>http://www.joomlic.com</url>
 	<description>
 		<![CDATA[
-		<h2>Slovenčina pre komponentu a modul iCagenda (1.2.5) - administrátorské a užívateľské rozhranie.</h2>
+		<h2>Slovenčina pre komponentu a modul iCagenda (1.2.9) - administrátorské a užívateľské rozhranie.</h2>
 		<h3>Translation Author: JRIBARSZKI [<a href="mailto:jan.ribarszki@gmail.com">contact</a>] [<a href="http://www.safkosuty.sk">website</a>]</h3>
 		<br>
 		]]>
 	</description>
 
 	<fileset>
-		<files folder="admin" target="administrator/language/sk-SK/">
-			<filename>sk-SK.com_icagenda.ini</filename>
-			<filename>sk-SK.com_icagenda.sys.ini</filename>
-		</files>
-		<files folder="module" target="language/sk-SK/">
-			<filename>sk-SK.mod_iccalendar.ini</filename>
-		</files>
-		<files folder="site" target="language/sk-SK/">
-			<filename>sk-SK.com_icagenda.ini</filename>
-		</files>
-	</fileset>
+  <files folder="admin" target="admin/language/sk-SK/">
+      <file>sk-SK.com_icagenda.ini</file>
+      <file>sk-SK.com_icagenda.sys.ini</file>
+  </files>
+
+    <files folder="site" target="language/sk-SK/">
+      <file>sk-SK.com_icagenda.ini</file>      
+  </files>
+  
+  <files folder="module" target="mod_iccalendar/language/sk-SK/">
+      <file>sk-SK.mod_iccalendar.ini</file> 
+  </files>
+  </fileset>
 	
 	<updateservers>
 		<server type="collection" priority="1" name="JoomliC Update Server">http://www.joomlic.com/icupdate/icagenda/translations.xml</server>
